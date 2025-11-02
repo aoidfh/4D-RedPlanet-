@@ -21,6 +21,7 @@ Unity 기반 4D 레일 슈팅 게임 (Rail Shooter)
 플랫폼	PC
 장르	4D 레일 슈팅
 역할	적 AI 스폰/행동, 보스 공격 패턴, 전투 로직 구현
+
 🎯 주요 기능 (Core Features)
 
 웨이브 기반 스폰 구조 설계
@@ -57,16 +58,6 @@ Wave Manager 를 통해 단계별 스폰 관리 및 타이밍 동기화
 
 파츠별 콜라이더 관리 로 파괴/비활성 상태 전환
 
-Animator Controller 를 통한 공격 및 피격 애니메이션 제어
-
-Object Pooling 없이 실시간 인스턴스 생성 기반으로 구성
-
-📽️ 시연 영상 (Demo Video)
-
-👉 YouTube Demo Link
-
-(현재 비공개 상태 — 포트폴리오 제출용)
-
 👤 담당 역할 (My Role)
 
 AI 스폰 및 웨이브 시스템 설계
@@ -90,9 +81,5 @@ Unity FSM과 NavMesh를 활용한 실시간 전투 최적화 구조 확립
 🧾 Contact
 
 Name: 박준영 (Jun-Young Park)
-
 Email: soiw5386@naver.com
-
-GitHub: https://github.com/aoidfh/-EFL-Grammar-Game-
-
 Demo: YouTube (임시링크)
