@@ -1,1 +1,98 @@
-# 4D-RedPlanet-
+🎮 4D Battle: Red Planet
+
+Unity 기반 4D 레일 슈팅 게임 (Rail Shooter)
+
+🧩 프로젝트 개요 (Overview)
+
+4D배틀 (RedPlanet) 은 Unity(C#)로 개발된 레일 슈팅(Rail Shooter) 게임입니다.
+플레이어는 지정된 경로를 따라 이동하며 등장하는 적을 조준하고 격파합니다.
+
+게임의 핵심은 AI 행동 루프 기반의 자율형 적 시스템 구현으로,
+각 적은 상황에 따라 탐색 → 엄폐 → 공격 → 피격 → 재엄폐 로직을 수행합니다.
+
+본 프로젝트는 3개월간의 팀 프로젝트로 진행되었으며,
+저는 적 AI 스폰 및 행동 로직, 보스 패턴 구현을 담당했습니다.
+또한 팀원들과 협업하여 레일 이동 구조, UI, 사운드 시스템을 함께 개발했습니다.
+
+⚙️ 개발 정보 (Development Info)
+항목	내용
+제작 기간	22.02 ~ 22.04 (3개월, 팀 프로젝트)
+개발 환경	Unity (C#), Visual Studio
+플랫폼	PC
+장르	4D 레일 슈팅
+역할	적 AI 스폰/행동, 보스 공격 패턴, 전투 로직 구현
+🎯 주요 기능 (Core Features)
+
+웨이브 기반 스폰 구조 설계
+
+스테이지별 웨이브 데이터를 정의하고 순차적으로 적 생성
+
+스폰 타이밍과 위치를 난이도에 따라 제어
+
+AI 행동 루프 시스템 (FSM 기반)
+
+탐색(Idle) → 엄폐(Cover) → 공격(Attack) → 피격(Damaged) → 재엄폐(Re-Cover)
+
+엄폐물 종류에 따라 다른 행동(좌우 회피, 점프, 드럼통 넘기 등) 수행
+
+전투 시나리오 제어
+
+플레이어 위치를 기준으로 적의 사격 반응 속도 조정
+
+다수의 AI가 동시에 전투할 때 상태를 분리하여 중복 타겟팅 방지
+
+보스 전투 시스템
+
+양팔, 어깨 4개의 공격 파츠 및 중앙 코어 구조
+
+각 파츠별 파괴 가능 및 코어 공격 시 클리어 처리
+
+🧠 기술 구현 (Technical Implementation)
+
+FSM(Finite State Machine) 로 AI 상태 전환 구현
+
+NavMesh Agent 를 활용하여 경로 탐색 및 이동 제어
+
+Wave Manager 를 통해 단계별 스폰 관리 및 타이밍 동기화
+
+파츠별 콜라이더 관리 로 파괴/비활성 상태 전환
+
+Animator Controller 를 통한 공격 및 피격 애니메이션 제어
+
+Object Pooling 없이 실시간 인스턴스 생성 기반으로 구성
+
+📽️ 시연 영상 (Demo Video)
+
+👉 YouTube Demo Link
+
+(현재 비공개 상태 — 포트폴리오 제출용)
+
+👤 담당 역할 (My Role)
+
+AI 스폰 및 웨이브 시스템 설계
+
+적 및 보스 FSM 로직 개발
+
+피격/사망 처리 및 전투 흐름 제어
+
+팀 내 코드 통합, 씬 빌드 및 QA 수행
+
+🏁 결과 및 성과 (Results)
+
+단순 반복이 아닌 상황 대응형 전투 흐름 구현
+
+AI의 행동 다양화로 전장 몰입감 강화
+
+보스 파츠 파괴 시스템을 통해 전략적 전투 연출 향상
+
+Unity FSM과 NavMesh를 활용한 실시간 전투 최적화 구조 확립
+
+🧾 Contact
+
+Name: 박준영 (Jun-Young Park)
+
+Email: soiw5386@naver.com
+
+GitHub: https://github.com/aoidfh/-EFL-Grammar-Game-
+
+Demo: YouTube (임시링크)
